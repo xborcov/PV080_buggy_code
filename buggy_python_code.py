@@ -1,6 +1,6 @@
+import urllib
 import yaml
 import flask
-import urllib
 
 app = flask.Flask(__name__)
 
@@ -20,6 +20,7 @@ class Person(object):
 
 
 def print_nametag(format_string, person):
+    """Print nametag"""
     print(format_string.format(person=person))
 
 
